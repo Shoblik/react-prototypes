@@ -1,0 +1,19 @@
+h1 {
+    font-size: 3rem;
+    position: relative;
+    left: 10%;
+
+}
+table {
+    width: 80%;
+    margin:auto;
+
+}
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
