@@ -1,12 +1,9 @@
-import React from 'react'
-import Stopwatch from './stopwatch';
+import React from 'react';
+import Stopwatch from "./watch";
 
 const App = () => {
     return(
-        <div>
-            <h1>Welcome to React MotherYaker!</h1>
-            <Stopwatch/>
-        </div>
+        <Stopwatch/>
     )
 }
 
