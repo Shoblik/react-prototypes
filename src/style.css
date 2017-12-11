@@ -1,14 +1,171 @@
-h1 {
-    text-align: center;
-    position: relative;
-    top: 40vh;
-}
+
 .buttonDiv {
     position: relative;
     text-align: center;
-    top: 45vh;
-    transfrom: translate(-50%);
+    top: 65vh;
 }
 button {
     margin: 0 5px;
+}
+.digitContainer {
+    position: relative;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    margin: auto;
+    top: 60vh;
+}
+.digit {
+    display: inline-block;
+    width: 88px;
+}
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    top: 63vh;
+    text-align: center;
+}
+
+.center {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    top: 26.5%;
+    left: 48.6%;
+}
+
+.center, .secondsOrbit, .minutesOrbit, .hoursOrbit {
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+/*//////////////Seconds Orbit classes//////////////////////*/
+.secondsOrbit {
+    width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    position: absolute;
+    top: 27%;
+    left: 49%;
+    transform: translateY(-50px);
+}
+.initiateSecondsOrbit {
+    -webkit-animation: orbit1 1s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: orbit1 1s linear infinite; /* Firefox 5-15 */
+    -o-animation: orbit1 1s linear infinite; /* Opera 12+ */
+    animation: orbit1 1s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+}
+.pauseSecondsOrbit {
+    animation-play-state: paused;
+}
+
+/*/////////////////////Seconds Orbit////////////////////////////////////////////*/
+@-webkit-keyframes orbit1 {
+    from { 	-webkit-transform: rotate(0deg) translateY(-50px) rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg) translateY(-50px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit1 {
+    from { 	-moz-transform: rotate(0deg) translateX(-50px) rotate(0deg); }
+    to   {  -moz-transform: rotate(360deg) translateX(-50px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit1 {
+    from { 	-o-transform: rotate(0deg) translateX(-50px) rotate(0deg); }
+    to   {  -o-transform: rotate(360deg) translateX(-50px) rotate(-360deg); }
+}
+
+@keyframes orbit1 {
+    from { 	transform: rotate(0deg) translateY(-50px) rotate(0deg); }
+    to   {  transform: rotate(360deg) translateY(-50px) rotate(-360deg); }
+}
+
+/*///////////////////////Minutes Orbit classes//////////////////////////////////////*/
+.minutesOrbit {
+    width: 40px;
+    height: 40px;
+    border: 2px solid lightBlue;
+    position: absolute;
+    top: 27%;
+    left: 48.7%;
+    transform: translateY(-100px);
+}
+.initiateMinutesOrbit {
+    -webkit-animation: orbit2 60s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: orbit2 60s linear infinite; /* Firefox 5-15 */
+    -o-animation: orbit2 60s linear infinite; /* Opera 12+ */
+    animation: orbit2 60s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+}
+.pauseMinutesOrbit {
+    animation-play-state: paused;
+}
+
+/*/////////////////////Minutes Orbit////////////////////////////////////////////*/
+@-webkit-keyframes orbit2 {
+    from { 	-webkit-transform: rotate(0deg) translateY(-100px) rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg) translateY(-100px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit2 {
+    from { 	-moz-transform: rotate(0deg) translateX(-100px) rotate(0deg); }
+    to   {  -moz-transform: rotate(360deg) translateX(-100px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit2 {
+    from { 	-o-transform: rotate(0deg) translateX(-100px) rotate(0deg); }
+    to   {  -o-transform: rotate(360deg) translateX(-100px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+    from { 	transform: rotate(0deg) translateY(-100px) rotate(0deg); }
+    to   {  transform: rotate(360deg) translateY(-100px) rotate(-360deg); }
+}
+/*///////////////////////////////Hours Orbit////////////////////////////////////////////////////*/
+
+.hoursOrbit {
+    width: 60px;
+    height: 60px;
+    border: 2px solid lightBlue;
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    transform: translateY(-170px);
+}
+.initiateHoursOrbit {
+    -webkit-animation: orbit3 3600s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: orbit3 3600s linear infinite; /* Firefox 5-15 */
+    -o-animation: orbit3 3600s linear infinite; /* Opera 12+ */
+    animation: orbit3 3600s linear infinite; /* Chrome, Firefox 16+, IE 10+, Safari 5 */
+}
+.pauseHoursOrbit {
+    animation-play-state: paused;
+}
+
+/*/////////////////////Minutes Orbit////////////////////////////////////////////*/
+@-webkit-keyframes orbit3 {
+    from { 	-webkit-transform: rotate(0deg) translateY(-170px) rotate(0deg); }
+    to   {  -webkit-transform: rotate(360deg) translateY(-170px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit3 {
+    from { 	-moz-transform: rotate(0deg) translateX(-170px) rotate(0deg); }
+    to   {  -moz-transform: rotate(360deg) translateX(-170px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit3 {
+    from { 	-o-transform: rotate(0deg) translateX(-170px) rotate(0deg); }
+    to   {  -o-transform: rotate(360deg) translateX(-170px) rotate(-360deg); }
+}
+
+@keyframes orbit3 {
+    from { 	transform: rotate(0deg) translateY(-170px) rotate(0deg); }
+    to   {  transform: rotate(360deg) translateY(-170px) rotate(-360deg); }
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1100px) {
+   .digitContainer {
+       width: 45%;
+    }
 }
