@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+
 var startOrbit = false
 var reset = false;
+
 class Orbit extends Component {
     constructor(props) {
         super(props);
@@ -80,10 +82,10 @@ class Orbit extends Component {
     render() {
         return(
             <div className='orbitContainer'>
-                <div className='center'>{this.state.ms}</div>
-                <div className={'secondsOrbit' + ' ' + this.initiateOrbit('Seconds')}>{this.state.sec}</div>
-                <div className={'minutesOrbit' + ' ' + this.initiateOrbit('Minutes')}>{this.state.min}</div>
-                <div className={'hoursOrbit' + ' ' + this.initiateOrbit('Hours')}>{this.state.hour}</div>
+                <div className='center'><p>{this.state.ms}</p></div>
+                <div className={'secondsOrbit' + ' ' + this.initiateOrbit('Seconds')}><p>{this.state.sec}</p></div>
+                <div className={'minutesOrbit' + ' ' + this.initiateOrbit('Minutes')}><p>{this.state.min}</p></div>
+                <div className={'hoursOrbit' + ' ' + this.initiateOrbit('Hours')}><p>{this.state.hour}</p></div>
             </div>
         );
     }

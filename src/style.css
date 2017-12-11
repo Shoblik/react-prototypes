@@ -27,25 +27,35 @@ h4 {
     text-align: center;
 }
 
-.center {
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
-    top: 26.5%;
-    left: 48.6%;
-}
-
 .center, .secondsOrbit, .minutesOrbit, .hoursOrbit {
     border-radius: 50%;
     position: absolute;
     text-align: center;
 }
 
+.center p, .secondsOrbit p, .minutesOrbit p, .hoursOrbit p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-55%);
+    color: white;
+    font-weight: 500;
+}
+
+.center {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3F681C;
+    background-color:  #3F681C;
+    top: 26.5%;
+    left: 48.6%;
+}
+
 /*//////////////Seconds Orbit classes//////////////////////*/
 .secondsOrbit {
     width: 30px;
     height: 30px;
-    border: 2px solid orange;
+    border: 2px solid #FB6542;
+    background-color: #FB6542;
     position: absolute;
     top: 27%;
     left: 49%;
@@ -86,7 +96,8 @@ h4 {
 .minutesOrbit {
     width: 40px;
     height: 40px;
-    border: 2px solid lightBlue;
+    border: 2px solid #FFBB00;
+    background-color: #FFBB00;
     position: absolute;
     top: 27%;
     left: 48.7%;
@@ -127,7 +138,8 @@ h4 {
 .hoursOrbit {
     width: 60px;
     height: 60px;
-    border: 2px solid lightBlue;
+    border: 2px solid #375E97;
+    background-color: #375E97;
     position: absolute;
     top: 25%;
     left: 48%;
