@@ -1,0 +1,20 @@
+.scrapbook-container {
+    margin: 10px auto;
+    min-height: 85vh;
+    position: relative;
+    width: 80vw;
+}
+.scrapbook-image {
+    width: 20%;
+    border: 10px solid #fff;
+    position: absolute;
+}
+.scrapbook-image:hover {
+    position: absolute;
+    width: 45%;
+    /*top: 50vh;*/
+    /*left: 50%;*/
+    transform: rotate(0deg) !important;
+
+    z-index: 20;
+}
